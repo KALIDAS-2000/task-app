@@ -1,0 +1,25 @@
+{%extends 'base.html'%}
+
+{%block body_block%}
+
+<div class="container">
+    <form action="" method="post">
+        {%csrf_token%}
+
+        <h3 class="font-monospace text-center mt-3">Task</h3>
+        <div class="mt-3">
+            <label class="fw-bold " for="id_addtask">your task</label>
+            <input class="mb-5 rounded-pill bg-info form-control border border-warning" type="text" name="task"
+                id="id_addtask">
+        </div>
+        <div>
+            <div class="col-3 mt-2"><button type="submit" class="rounded-start  btn btn-dark mb-4">Add</button>
+            </div>
+        </div>
+
+    </form>
+
+
+</div>
+
+{%endblock%}
